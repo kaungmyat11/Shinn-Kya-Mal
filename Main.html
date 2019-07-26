@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://kit.fontawesome.com/8da23e008a.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="Image/Piggy.png">
+    <title>Details</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+            legend: {position: 'labeled',
+        },
+            backgroundColor: 'transparent',
+          height: 400,
+          width: '100%',
+          pieHole: 0.5,
+          chartArea: {
+            left: "5%",
+            top: "5%",
+            height: "90%",
+            width: "100%"
+        }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+
+<body>
+    <header id="main">
+        <nav class="navbar navbar-light bg-primary">
+            <a class="navbar-brand" href="#"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <i class="fas fa-user-circle text-light"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sub-Main">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-2 shadow justify-content-md-center" id="left-column">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Monthly Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-plus"></i>
+                                <span>Incomes</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-minus"></i>
+                                <span>Expense</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span> Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-7 dashboard " id="middle-column">
+
+                    <form action="" method="POST">
+                        <div id="clock">
+                            <!-- <i class='fas fa-angle-left'></i> -->
+                            <select id="months" name="months">
+                                <div class="">
+                                    <option value="0">January</option>
+                                    <option value="1">Feburary</option>
+                                    <option value="2">March</option>
+                                    <option value="3">April</option>
+                                    <option value="4">May</option>
+                                    <optioclassvalue="5">June</option>
+                                        <option value="6">July</option>
+                                        <option value="7">August</option>
+                                        <option value="8">September</option>
+                                        <option value="9">October</option>
+                                        <option value="10">November</option>
+                                        <option value="11">December</option>
+                                        <script>SelectElement("months", month)</script>
+                                </div>
+
+                            </select>
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </form>
+
+                    <div class="frame1">
+
+                        <div class="row justify-content-md-center">
+                            <div class="plan basic col-3" onclick="void(0);">
+                                <div class="title">Incomes</div>
+                                <div class="price">$1000<span>per month</span></div>
+                                <!-- <div class="lines">
+                                    <div class="line1" style="width: 69px;"></div>
+                                    <div class="line1" style="width: 59px;"></div>
+                                    <div class="line1" style="width: 66px;"></div>
+                                    <div class="line1" style="width: 46px;"></div>
+                                </div> -->
+                            </div>
+
+                            <div class="plan pro col-3" onclick="void(0);">
+                                <div class="title">Expense</div>
+                                <div class="price">$900<span>per month</span></div>
+                                <!-- <div class="lines">
+                                    <div class="line1" style="width: 69px;"></div>
+                                    <div class="line1" style="width: 59px;"></div>
+                                    <div class="line1" style="width: 66px;"></div>
+                                    <div class="line1" style="width: 46px;"></div>
+                                </div> -->
+                            </div>
+
+                            <div class="plan premium col-3" onclick="void(0);">
+                                <div class="title">Total</div>
+                                <div class="price">$100<span>per month</span></div>
+                                <!-- <div class="lines">
+                                    <div class="line1" style="width: 69px;"></div>
+                                    <div class="line1" style="width: 59px;"></div>
+                                    <div class="line1" style="width: 66px;"></div>
+                                    <div class="line1" style="width: 46px;"></div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center">
+
+                            <div class="datas">
+                                <div class="data users">
+                                    <div class="text">
+                                        <span class="left">Salary</span>
+                                        <span class="right">100%</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1"></div>
+                                    </div>
+                                </div>
+
+                                <div class="data gb">
+                                    <div class="text">
+                                        <span class="left">Revenue</span>
+                                        <span class="right">100%</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1"></div>
+                                    </div>
+                                </div>
+
+                                <div class="data projects">
+                                    <div class="text">
+                                        <span class="left">Other Commerial</span>
+                                        <span class="right">100%</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="row donut justify-content-md-center">
+                            <div class="container-fluid">
+                                <div id="donutchart"></div>
+                            </div>
+                                
+                        </div>
+
+                        <div class="row justify-content-md-center py-3">
+                                <h6><i class="fas fa-copyright"></i> 2019 UIT. All Rights Reserved. </h6>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="col-3 shadow" id="right-column">
+                    
+                    <table>
+
+                        <tr>
+                            <th id="borderchange1" onclick="bydate()">By DATE</th>
+                            <th id="borderchange2" onclick="bycata()">By CATAGORY</th>
+                        </tr>
+
+                        <tr class="blank_row">
+                            <td colspan="1"></td>
+                        </tr>
+
+                        <tbody id="date">
+                            <tr class="dateUnderline">
+                                <td class="day">Yesterday</td>
+                                <td class="gray text-right">$12345600</td>
+                            </tr>
+                            <tr id="two">
+                                <td>
+                                    Food & Drinks
+                                </td>
+                                <td class="money">
+                                    $12345600
+                                    <a href="#">
+                                        <i class="fas fa-angle-right gray"></i></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="blank_row">
+                                <td colspan="2"></td>
+
+                            </tr>
+                            <tr class="dateUnderline">
+                                <td class="day">Today</td>
+                                <td class="gray text-right">$12345</td>
+
+                            </tr>
+                            <tr id="two">
+                                <td>Charity</td>
+                                <td class="money">$2560
+                                    <a href="#">
+                                        <i class="fas fa-angle-right gray"></i></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr id="two">
+                                <td>Education</td>
+                                <td class="money">$25600
+                                    <a href="#">
+                                        <i class="fas fa-angle-right gray"></i></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                        <tbody id="bycata">
+                            <tr>
+                                <td>
+                                    <i class='fas fa-tag gray' id=""> Cloths & Fashion</i>
+
+                                </td>
+                                <td class="money">$12345600 </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='fas fa-tag gray' id=""> Food & Drinks</i>
+                                </td>
+                                <td class="money">$12345600</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="addBtn">
+                            <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
