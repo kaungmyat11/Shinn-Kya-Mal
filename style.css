@@ -476,7 +476,6 @@ header .container a:hover{
     cursor: pointer;
 }
 
-
 #sub-Main .addBtn .fas{
     font-size: 5rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.12), 0 12px 12px rgba(0, 0, 0, 0.24);
@@ -739,6 +738,24 @@ header .container a:hover{
     border-bottom: 4px solid #444444;
 } */
 
+/* ------------ Pop Up Modal Page ------------------- */
+.modal .fas{
+    font-size: 1.5rem;
+    color: #f6416c;
+}
+
+.modal-header select{
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.modal-header option{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 /* ------------ Profile Page ------------------- */
 #middle-column{
@@ -769,133 +786,6 @@ header .container a:hover{
     font-size: 1.25rem;
     padding: 10px 0;
 }
-
-
-/* #main .row{
-    
-}
-
-#main .container{
-    margin: 0 0;
-}
-
-#main #left-column{
-    height: 100vh;
-    padding: 0 auto;
-}
-
-#main #right-column{
-   background: #ECF0F1;
-}
-
-#main .container-fluid .row .col-2{
-    padding-top: 12px;
-}
-
-#main .container-fluid .row .col-2 .nav-item:first-of-type a{
-    font-size: 2rem;
-    border-bottom: 1px solid #ECF0F1;
-}
-
-#main .container-fluid .row .col-2 .nav-item:first-of-type a:hover{
-    cursor: pointer;
-    color: #ECF0F1 !important;
-}
-
-#main .container-fluid .row .col-2 .nav-item a{
-    padding: 18px 0;
-    transition: .5s;
-    font-size: 1.6rem;
-}
-
-#main .container-fluid .row .col-2 .nav-item a:hover{
-    color: #2B8CFF !important;
-    background: transparent;
-}
-
-#main .container-fluid .row .nav-item .fas{
-    padding: 0 12px 0 0;
-    font-size: 2.5rem;
-}
-
-#main #Profile{
-    padding: 50px 0 0;
-}
-
-#main #Profile .profile{
-    margin: 0 auto;
-    font-size: 8rem;
-    padding: 12px 0;
-}
-
-#main #Profile .sub-profile{
-    padding: 12px 0;
-}
-
-#main #Profile .sub-profile .col-5 p{
-    text-align: center;
-}
-
-
-
-
-#main .upperDetail{
-    padding: 50px 8px 20px;
-    border-bottom: 2px solid #E74C3C;
-}
-
-#main .upperDetail ul li{
-    display: inline-block;
-    list-style: none;
-    padding: 0 20px;
-}
-
-#main .upperDetail ul li:first-of-type{
-    padding-left: 0px;
-    padding-right: 40px;
-}
-
-#main .upperDetail ul li:last-of-type{
-    padding-right: 0px;
-    padding-left: 40px;
-}
-
-#main .upperDetail .fas{
-    font-size: 2rem;
-}
-
-#main .upperDetail ul h5{
-    color: #E74C3C;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: auto;
-}
-
-#main .amount{
-    padding: 65px 0;
-}
-
-#main .amount ul .fas{
-    font-size: 3.4rem;
-}
-
-#main .amount ul li{
-    list-style: none;
-    padding: 0 15px;
-    display: inline-block;
-}
-
-#main .amount ul h4{
-    font-weight: 600;
-    font-size: 4rem;
-}
-
-#main .upperDetail ul h4{
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    margin: auto;
-} */
 
 
 /* ------------ footer ------------------- */

@@ -48,3 +48,11 @@ function bycata()
     }
 }
 
+
+
+// pop up modal input
+
+var modal = document.getElementById("mymodal");
+var btn = document.getElementById("plusButton");
+var span = document.getElementsByClassName("close")[0];
+
