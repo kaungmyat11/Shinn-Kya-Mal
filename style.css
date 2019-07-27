@@ -328,14 +328,12 @@ header .container a:hover{
 
 #sub-Main #left-column{
     padding: 0 5px;
-
     background: #ffffff;
     
 }
 
 #sub-Main #right-column{
-    /* height: 100%; */
-    /* background: rgba(179, 224, 242, 0.1); */
+    overflow: auto;
 }
 
 #sub-Main #left-column ul li{
@@ -363,7 +361,6 @@ header .container a:hover{
 
 #sub-Main #middle-column{
     height: 91.5vh;
-
 }
 
 #sub-Main #right-column ul li{
@@ -466,7 +463,7 @@ header .container a:hover{
     font-size: 1rem;
 }
 
-#sub-Main .fas:hover{
+#sub-Main #middle-column .fas:hover{
     color: #414141;
 }
 
@@ -625,14 +622,14 @@ header .container a:hover{
   }
   
   .datas {
-    height: 180px;
+    height: auto;
     width: 90%;
     background: #fff;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
   }
 
   .datas .data {
-    margin: 17px 15px 0 15px;
+    margin: 20px 18px;
   }
 
   .datas .data .text {
@@ -661,7 +658,7 @@ header .container a:hover{
     z-index: 1;
     height: 10px;
     width: 100%;
-    background: #1eafed;
+    background: #007bff;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -670,6 +667,122 @@ header .container a:hover{
     transition: all 0.3s ease-in-out;
     border-radius: 3px;
   }
+
+  .datas .data .line1 .Salary{  
+      transform: scaleX(0.3);
+  }
+
+  .datas .data .line1 .Awards{
+      transform: scaleX(0.5);
+  }
+
+  .datas .data .line1 .Grants{
+      transform: scaleX(0.7);
+  }
+
+  .datas .data .line1 .Sale{
+      transform: scaleX(0.8);
+  }
+
+  .datas .data .line1 .Rental{
+      transform: scaleX(0.45);
+  }
+
+  .datas .data .line1 .Investments{
+      transform: scaleX(0.2);
+  }
+
+  .datas .data .line1 .Dividends{
+      transform: scaleX(0.9);
+  }
+
+  .datas .data .line1 .Lottery{
+      transform: scaleX(0.4);
+  }
+
+  .datas .data .line1 .IncomeOther{
+      transform: scaleX(0.1);
+  }
+
+  .datas .data .line1 .PocketMoney{
+      transform: scaleX(0.3);
+  }
+
+  .datas .data .line1 .ExpenseOther{
+    transform: scaleX(0.25);
+}
+
+.datas .data .line1 .Travel{
+    transform: scaleX(0.6);
+}
+
+.datas .data .line1 .Pet{
+    transform: scaleX(0.8);
+}
+
+.datas .data .line1 .Baby{
+    transform: scaleX(0.45);
+}
+
+.datas .data .line1 .Beauty{
+    transform: scaleX(0.5);
+}
+
+.datas .data .line1 .Health{
+    transform: scaleX(0.7);
+}
+
+.datas .data .line1 .Sports{
+    transform: scaleX(0.3);
+}
+
+.datas .data .line1 .Shopping{
+    transform: scaleX(0.1);
+}
+
+.datas .data .line1 .Telephone{
+    transform: scaleX(0.56);
+}
+
+.datas .data .line1 .Tax{
+    transform: scaleX(0.6);
+}
+
+.datas .data .line1 .Clothing{
+    transform: scaleX(0.23);
+}
+
+.datas .data .line1 .Insurance{
+    transform: scaleX(0.9);
+}
+
+.datas .data .line1 .Entertainment{
+    transform: scaleX(0.4);
+}
+
+.datas .data .line1 .Transportation{
+    transform: scaleX(0.3);
+}
+
+.datas .data .line1 .Bills{
+    transform: scaleX(0.6);
+}
+
+.datas .data .line1 .Food{
+    transform: scaleX(0.3);
+}
+
+.datas .data .line1 .Income{
+    transform: scaleX(0.6);
+}
+
+.datas .data .line1 .Expense{
+    transform: scaleX(0.5);
+}
+
+.datas .data .line1 .Total{
+    transform: scaleX(0.2);
+}
 
 /* ------------ Dashboard Right Column ------------------- */
 #sub-Main #right-column table{
@@ -683,9 +796,31 @@ header .container a:hover{
     margin-top: 8px;
 }
 
+#right-column table .income{
+    background: #3490de; 
+}
+
+#right-column table .expense{
+    background: #ff2e63;
+}
+
+#right-column table #two td{
+    color: #ffffff;
+}
+
 #sub-Main .money{
-    color:#E74C3C;
-    text-align:right;
+    text-align: right;
+}
+
+#sub-Main .money .fas{
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0 10px 0 2px;
+    transition: 0.3s ease-in-out;
+}
+
+#sub-Main .money .fas:hover{
+    font-size: 1.4rem;
 }
 
 #sub-Main #right-column table th{

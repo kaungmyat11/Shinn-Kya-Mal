@@ -48,7 +48,7 @@
             ]);
 
             var options = {
-                legend: { position: 'labeled', fontSize: 30 },
+                legend: { position: 'right', alignment: 'center' },
                 tooltip: { fontSize: 15 },
                 backgroundColor: 'transparent',
                 height: 400,
@@ -75,7 +75,7 @@
             <a class="navbar-brand" href="#"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
             <ul class="navbar-nav mr-auto my-auto">
                 <li class="nav-item">
-                    Dashboard
+                    Income Dashboard
                 </li>
             </ul>
             <span><a href=""><i class="fas fa-user-circle"></i></a></span>
@@ -101,7 +101,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="Expense.html">
                                 <i class="fas fa-minus"></i>
                                 <span>Expense</span>
                             </a>
@@ -115,7 +115,6 @@
                     </ul>
                 </div>
 
-
                 <div class="col-7 dashboard " id="middle-column">
 
                     <form action="" method="POST">
@@ -127,14 +126,14 @@
                                     <option value="2">March</option>
                                     <option value="3">April</option>
                                     <option value="4">May</option>
-                                    <optioclassvalue="5">June</option>
-                                        <option value="6">July</option>
-                                        <option value="7">August</option>
-                                        <option value="8">September</option>
-                                        <option value="9">October</option>
-                                        <option value="10">November</option>
-                                        <option value="11">December</option>
-                                        <script>SelectElement("months", month)</script>
+                                    <option value="5">June</option>
+                                    <option value="6">July</option>
+                                    <option value="7">August</option>
+                                    <option value="8">September</option>
+                                    <option value="9">October</option>
+                                    <option value="10">November</option>
+                                    <option value="11">December</option>
+                                    <script>SelectElement("months", month)</script>
                                 </div>
 
                             </select>
@@ -144,11 +143,11 @@
 
                     <div class="frame1">
 
-                            <div class="row donut justify-content-md-center">
-                                    <div class="container-fluid">
-                                        <div id="donutchart"></div>
-                                    </div>
-                                </div>
+                        <div class="row donut justify-content-md-center">
+                            <div class="container-fluid">
+                                <div id="donutchart"></div>
+                            </div>
+                        </div>
 
                         <div class="row justify-content-md-center">
 
@@ -159,34 +158,106 @@
                                         <span class="right">50000</span>
                                     </div>
                                     <div class="line1">
-                                        <div class="fill1"></div>
+                                        <div class="fill1 Salary">
+
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="data gb">
                                     <div class="text">
-                                        <span class="left">Revenue</span>
+                                        <span class="left">Awards</span>
                                         <span class="right">6000</span>
                                     </div>
                                     <div class="line1">
-                                        <div class="fill1"></div>
+                                        <div class="fill1 Awards"></div>
                                     </div>
                                 </div>
 
                                 <div class="data projects">
                                     <div class="text">
-                                        <span class="left">Other Commerial</span>
+                                        <span class="left">Grants</span>
                                         <span class="right">12000</span>
                                     </div>
                                     <div class="line1">
-                                        <div class="fill1"></div>
+                                        <div class="fill1 Grants"></div>
+                                    </div>
+                                </div>
+
+                                <div class="data projects">
+                                    <div class="text">
+                                        <span class="left">Sale</span>
+                                        <span class="right">12000</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1 Sale"></div>
+                                    </div>
+                                </div>
+
+                                <div class="data projects">
+                                    <div class="text">
+                                        <span class="left">Rental</span>
+                                        <span class="right">12000</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1 Rental"></div>
+                                    </div>
+                                </div>
+
+                                <div class="data projects">
+                                    <div class="text">
+                                        <span class="left">Investments</span>
+                                        <span class="right">12000</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1 Investments"></div>
+                                    </div>
+                                </div>
+
+                                <div class="data projects">
+                                    <div class="text">
+                                        <span class="left">Lottery</span>
+                                        <span class="right">12000</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1 Lottery"></div>
+                                    </div>
+                                </div>
+
+                                <div class="data projects">
+                                    <div class="text">
+                                        <span class="left">Dividends</span>
+                                        <span class="right">12000</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1 Dividends"></div>
+                                    </div>
+                                </div>
+
+                                <div class="data projects">
+                                    <div class="text">
+                                        <span class="left">Pocket Money</span>
+                                        <span class="right">12000</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1 PocketMoney"></div>
+                                    </div>
+                                </div>
+
+                                <div class="data projects">
+                                    <div class="text">
+                                        <span class="left">Others</span>
+                                        <span class="right">12000</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1 IncomeOther"></div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
 
-                        
+
 
                         <div class="row justify-content-md-center py-3">
                             <h6><i class="fas fa-copyright"></i> 2019 UIT. All Rights Reserved. </h6>
@@ -294,7 +365,6 @@
                     </button>
                 </div>
                 <div class="modal-body justify-content-md-center">
-                    <!-- <img src="Image/money-bag.png" class="w-50 h-50" alt=""> -->
                     <form action="" class="container-fluid">
                         <div class="form-group row justify-content-md-center">
                             <div class="col-1 pr-0 my-auto text-center">
@@ -307,7 +377,7 @@
                         </div>
                         <div class="form-group row justify-content-md-center">
                             <div class="col-1 pr-0 my-auto text-center">
-                                    <i class="far fa-calendar-alt"></i>
+                                <i class="far fa-calendar-alt"></i>
                             </div>
 
                             <div class="col-8">
@@ -317,7 +387,7 @@
 
                         <div class="form-group row justify-content-md-center">
                             <div class="col-1 pr-0 my-auto text-center">
-                                    <i class="fas fa-list"></i>
+                                <i class="fas fa-list"></i>
                             </div>
                             <div class="col-8">
                                 <select class="form-control" name="" id="">

@@ -146,7 +146,7 @@
                         <div class="row justify-content-md-center">
                             <div class="plan basic col-3" onclick="void(0);">
                                 <div class="title">Incomes</div>
-                                <div class="price">$1000<span>per month</span></div>
+                                <div class="price">$1000</div>
                                 <div class="lines">
                                     <div class="line1" style="width: 69px;"></div>
                                     <div class="line1" style="width: 59px;"></div>
@@ -157,7 +157,7 @@
 
                             <div class="plan pro col-3" onclick="void(0);">
                                 <div class="title">Expense</div>
-                                <div class="price">$900<span>per month</span></div>
+                                <div class="price">$900</div>
                                 <div class="lines">
                                     <div class="line1" style="width: 69px;"></div>
                                     <div class="line1" style="width: 59px;"></div>
@@ -168,7 +168,7 @@
 
                             <div class="plan premium col-3" onclick="void(0);">
                                 <div class="title">Total</div>
-                                <div class="price">$100<span>per month</span></div>
+                                <div class="price">$100</div>
                                 <div class="lines">
                                     <div class="line1" style="width: 69px;"></div>
                                     <div class="line1" style="width: 59px;"></div>
@@ -183,31 +183,31 @@
                             <div class="datas">
                                 <div class="data users">
                                     <div class="text">
-                                        <span class="left">Salary</span>
+                                        <span class="left">Income</span>
                                         <span class="right">100%</span>
                                     </div>
                                     <div class="line1">
-                                        <div class="fill1"></div>
+                                        <div class="fill1 Income"></div>
                                     </div>
                                 </div>
 
                                 <div class="data gb">
                                     <div class="text">
-                                        <span class="left">Revenue</span>
+                                        <span class="left">Expense</span>
                                         <span class="right">100%</span>
                                     </div>
                                     <div class="line1">
-                                        <div class="fill1"></div>
+                                        <div class="fill1 Expense"></div>
                                     </div>
                                 </div>
 
                                 <div class="data projects">
                                     <div class="text">
-                                        <span class="left">Other Commerial</span>
+                                        <span class="left">Total</span>
                                         <span class="right">100%</span>
                                     </div>
                                     <div class="line1">
-                                        <div class="fill1"></div>
+                                        <div class="fill1 Total"></div>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@
                                 <td class="day">Yesterday</td>
                                 <td class="gray text-right">$12345600</td>
                             </tr>
-                            <tr id="two">
+                            <tr id="two" class="income">
                                 <td>
                                     Food & Drinks
                                 </td>
@@ -267,7 +267,7 @@
                                 <td class="gray text-right">$12345</td>
 
                             </tr>
-                            <tr id="two">
+                            <tr id="two" class="expense">
                                 <td>Charity</td>
                                 <td class="money">$2560
                                     <a href="#">
@@ -275,7 +275,7 @@
                                     </a>
                                 </td>
                             </tr>
-                            <tr id="two">
+                            <tr id="two" class="expense">
                                 <td>Education</td>
                                 <td class="money">$25600
                                     <a href="#">
@@ -383,7 +383,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Add Income</h5>
+                    <h5 class="modal-title">Add Expense</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
