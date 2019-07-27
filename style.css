@@ -372,22 +372,26 @@ header .container a:hover{
 }
 
 #sub-Main .upperDetail{
-    padding: 45px 0 0px;
+    padding: 25px 0 0px;
     border-bottom: 2px solid #E74C3C
+}
+
+#sub-Main .upperDetail ul{
+    margin: 25px auto 10px auto;
 }
 
 #sub-Main .upperDetail ul li:first-of-type{
     padding-left: 0px;
-    padding-right: 40px;
+    padding-right: 0;
 }
 
 #sub-Main .upperDetail ul li:last-of-type{
-    padding-right: 0px;
-    padding-left: 30px;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 #sub-Main .upperDetail ul li{
-    padding: 0 30px;
+    padding: 0 3rem;
 }
 
 #sub-Main .upperDetail ul h4{
@@ -396,7 +400,7 @@ header .container a:hover{
     text-align: center;
 }
 
-#sub-Main .upperDetail ul h5{
+#sub-Main .upperDetail ul button{
     color: #E74C3C;
     font-size: 1.2rem;
     text-align: center;
@@ -732,6 +736,7 @@ header .container a:hover{
 
 #bycata td{
     font-size: 1rem;
+    color: 303841;
 }
 /* 
 #borderchange1{
@@ -739,21 +744,15 @@ header .container a:hover{
 } */
 
 /* ------------ Pop Up Modal Page ------------------- */
-.modal .fas{
+.modal i{
     font-size: 1.5rem;
-    color: #f6416c;
+    color: #323232;
 }
 
-.modal-header select{
-    outline: none;
-    border: none;
+.modal-header h5{
     font-size: 1.2rem;
+    margin-left: 1rem;
     font-weight: 600;
-}
-
-.modal-header option{
-    font-size: 1rem;
-    font-weight: 400;
 }
 
 

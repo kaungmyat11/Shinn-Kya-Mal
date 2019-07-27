@@ -29,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="Image/Piggy.png">
-    <title>Dashboard</title>
+    <title>Dashboard - Income</title>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -43,7 +43,8 @@
                 ['Commute', 2],
                 ['Watch TV', 2],
                 ['Sleep', 7],
-                ['Play', 8]
+                ['Play', 8],
+                ['Dance', 9]
             ]);
 
             var options = {
@@ -53,7 +54,7 @@
                 height: 400,
                 width: '100%',
                 pieHole: 0.5,
-                colors: ['#00b8a9', '#3490de', '#444444', '#ff8a5c', '#ffdd67', '#cf455c', '#f6416c', '#e23e57', '#ff5722'],
+                colors: ['#00b8a9', '#3490de', '#444444', '#ff8a5c', '#ffdd67', '#f6416c', '#e23e57', '#ff5722'],
                 chartArea: {
                     left: "5%",
                     top: "5%",
@@ -143,40 +144,11 @@
 
                     <div class="frame1">
 
-                        <div class="row justify-content-md-center">
-                            <div class="plan basic col-3" onclick="void(0);">
-                                <div class="title">Incomes</div>
-                                <div class="price">$1000<span>per month</span></div>
-                                <div class="lines">
-                                    <div class="line1" style="width: 69px;"></div>
-                                    <div class="line1" style="width: 59px;"></div>
-                                    <div class="line1" style="width: 66px;"></div>
-                                    <div class="line1" style="width: 46px;"></div>
+                            <div class="row donut justify-content-md-center">
+                                    <div class="container-fluid">
+                                        <div id="donutchart"></div>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="plan pro col-3" onclick="void(0);">
-                                <div class="title">Expense</div>
-                                <div class="price">$900<span>per month</span></div>
-                                <div class="lines">
-                                    <div class="line1" style="width: 69px;"></div>
-                                    <div class="line1" style="width: 59px;"></div>
-                                    <div class="line1" style="width: 66px;"></div>
-                                    <div class="line1" style="width: 46px;"></div>
-                                </div>
-                            </div>
-
-                            <div class="plan premium col-3" onclick="void(0);">
-                                <div class="title">Total</div>
-                                <div class="price">$100<span>per month</span></div>
-                                <div class="lines">
-                                    <div class="line1" style="width: 69px;"></div>
-                                    <div class="line1" style="width: 59px;"></div>
-                                    <div class="line1" style="width: 66px;"></div>
-                                    <div class="line1" style="width: 46px;"></div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="row justify-content-md-center">
 
@@ -184,7 +156,7 @@
                                 <div class="data users">
                                     <div class="text">
                                         <span class="left">Salary</span>
-                                        <span class="right">100%</span>
+                                        <span class="right">50000</span>
                                     </div>
                                     <div class="line1">
                                         <div class="fill1"></div>
@@ -194,7 +166,7 @@
                                 <div class="data gb">
                                     <div class="text">
                                         <span class="left">Revenue</span>
-                                        <span class="right">100%</span>
+                                        <span class="right">6000</span>
                                     </div>
                                     <div class="line1">
                                         <div class="fill1"></div>
@@ -204,7 +176,7 @@
                                 <div class="data projects">
                                     <div class="text">
                                         <span class="left">Other Commerial</span>
-                                        <span class="right">100%</span>
+                                        <span class="right">12000</span>
                                     </div>
                                     <div class="line1">
                                         <div class="fill1"></div>
@@ -214,12 +186,7 @@
 
                         </div>
 
-                        <div class="row donut justify-content-md-center">
-                            <div class="container-fluid">
-                                <div id="donutchart"></div>
-                            </div>
-
-                        </div>
+                        
 
                         <div class="row justify-content-md-center py-3">
                             <h6><i class="fas fa-copyright"></i> 2019 UIT. All Rights Reserved. </h6>
@@ -304,7 +271,7 @@
                     </table>
 
                     <div class="addBtn">
-                        <a href="" class="btn btn-outline-*" data-toggle="modal" data-target="#expensemodal">
+                        <a href="" class="btn btn-outline-*" data-toggle="modal" data-target="#incomemodal">
                             <i class="fas fa-plus-circle"></i>
                         </a>
 
@@ -363,74 +330,6 @@
                                     <option>Lottery</option>
                                     <option>Dividends</option>
                                     <option>Pocket Money</option>
-                                    <option>Others</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="modal fade" tabindex="-1" id="expensemodal" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Add Income</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body justify-content-md-center">
-                    <!-- <img src="Image/money-bag.png" class="w-50 h-50" alt=""> -->
-                    <form action="" class="container-fluid">
-                        <div class="form-group row justify-content-md-center">
-                            <div class="col-1 pr-0 my-auto text-center">
-                                <i class="fas fa-dollar-sign"></i>
-                            </div>
-
-                            <div class="col-8">
-                                <input type="number" class="form-control" placeholder="0.00">
-                            </div>
-                        </div>
-                        <div class="form-group row justify-content-md-center">
-                            <div class="col-1 pr-0 my-auto text-center">
-                                    <i class="far fa-calendar-alt"></i>
-                            </div>
-
-                            <div class="col-8">
-                                <input type="date" class="form-control" placeholder="0.00">
-                            </div>
-                        </div>
-
-                        <div class="form-group row justify-content-md-center">
-                            <div class="col-1 pr-0 my-auto text-center">
-                                    <i class="fas fa-list"></i>
-                            </div>
-                            <div class="col-8">
-                                <select class="form-control" name="" id="">
-                                    <option>Food</option>
-                                    <option>Bills</option>
-                                    <option>Transportation</option>
-                                    <option>Entertainment</option>
-                                    <option>Insurance</option>
-                                    <option>Clothing</option>
-                                    <option>Tax</option>
-                                    <option>Shopping</option>
-                                    <option>Telephone</option>
-                                    <option>Sports</option>
-                                    <option>Health</option>
-                                    <option>Beauty</option>
-                                    <option>Baby</option>
-                                    <option>Pet</option>
-                                    <option>Travel</option>
                                     <option>Others</option>
                                 </select>
                             </div>
