@@ -291,9 +291,6 @@ header .container a:hover{
 }
 
 /* ------------ Main Page ------------------- */
-#main{
-
-}
 
 /* #main nav{
     padding-left: 10px;
@@ -309,7 +306,7 @@ header .container a:hover{
 }
 
 #main nav ul li{
-    color: #E4E4E4;
+    color: #ffffff;
     font-size: 1.5rem;
 }
 
@@ -811,6 +808,10 @@ header .container a:hover{
 #sub-Main .money{
     text-align: right;
 }
+/* 
+#sub-Main .in-ex #two td{
+    color: #414141;
+} */
 
 #sub-Main .money .fas{
     color: #ffffff;
@@ -871,7 +872,7 @@ header .container a:hover{
 
 #bycata td{
     font-size: 1rem;
-    color: 303841;
+    color: #303841;
 }
 /* 
 #borderchange1{
