@@ -38,7 +38,7 @@ header{
     height: 100vh;
 }
 
-header .navbar-brand{
+.navbar-brand{
     font-weight: 600;
     font-size: 1.5rem !important;
     padding-left: 38px;
@@ -47,7 +47,6 @@ header .navbar-brand{
 .navbar-brand .fas{
     font-size: 1.8rem;
     font-weight: 600 !important;
-    /* color: #2C3E50; */
     padding: 10px 10px 10px 0;
 }
 
@@ -58,15 +57,16 @@ header .navbar-brand{
 .navbar ul li a{
     float: right;
     font-weight: 600 !important;
-    font-size: 15px;
+    font-size: 1rem;
     text-align: center;
     letter-spacing: 1.5px;
+    color: #ffffff !important;
     /* color: #2C3E50 !important; */
 
 }
 
 .navbar ul li a:hover{
-    color: #2B8CFF !important;
+    color: #bde4f4 !important;
     transition: .5s;
 }
 
@@ -331,6 +331,7 @@ header .container a:hover{
 
 #sub-Main #right-column{
     overflow: auto;
+    height: 91.5vh;
 }
 
 #sub-Main #left-column ul li{
@@ -358,6 +359,7 @@ header .container a:hover{
 
 #sub-Main #middle-column{
     height: 91.5vh;
+    overflow: auto;
 }
 
 #sub-Main #right-column ul li{
@@ -893,11 +895,10 @@ header .container a:hover{
 
 
 /* ------------ Profile Page ------------------- */
-#middle-column{
-    padding-top: 25px;
-    overflow: auto;
+.AccountProfile{
+    height: auto;
+    padding-top: 6%;
 }
-
 .AccountProfile p{
     font-size: 12px;
 }
@@ -922,6 +923,9 @@ header .container a:hover{
     padding: 10px 0;
 }
 
+.AccountProfile .row a{
+    color: #007bff !important;
+}
 
 /* ------------ footer ------------------- */
 #Contact{
@@ -979,7 +983,7 @@ header .container a:hover{
 /* ------------ Our Team ------------------- */
 #Team{
     padding: 75px 0;
-    background: linear-gradient(45Deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Image/Team.jpg") center no-repeat;
+    background: linear-gradient(45Deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Image/Team.jpg") center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -993,7 +997,7 @@ header .container a:hover{
     font-weight: 600;
     font-size: 42px;
     letter-spacing: 1.5px;
-    color: #ECF0F1;
+    color: #ffffff;
 }
 
 #Team .profile-pic h2{
@@ -1001,19 +1005,19 @@ header .container a:hover{
     padding: 10px 0 0;
     font-size: 20px;
     letter-spacing: 0.5px;
-    color: #2B8CFF;
+    color: #ffffff;
 }
 
 #Team h3{
     font-size: 15px;
-    color: #ECF0F1 !important;
+    color: #ffffff !important;
     letter-spacing: 1.2px;
     margin-bottom: 24px;
 }
 
 #Team h1::after{
     content: '';
-    background-color: #ECF0F1;
+    background-color: #ffffff;
     width: 180px;
     height: 3.5px;
     display: block;
@@ -1174,7 +1178,7 @@ footer h3, a{
 
 footer a:hover{
     text-decoration: none;
-    color: #2B8CFF !important;
+    color: #2C3E50 !important;
     transition: .5s;
 }
 
