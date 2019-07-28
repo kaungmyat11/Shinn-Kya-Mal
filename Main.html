@@ -65,10 +65,28 @@
             var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
             chart.draw(data, options);
         }
+
+        window.addEventListener("load", function () {
+            const preloader = document.querySelector(".preloader");
+            preloader.classList.add("hidden");
+        });
     </script>
 </head>
 
 <body>
+
+    <div class="preloader" id="Loader">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+    </div>
+
     <header id="main">
         <nav class="navbar navbar-light bg-primary">
             <a class="navbar-brand" href="#"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
@@ -100,7 +118,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="Expense.html">
                                 <i class="fas fa-minus"></i>
                                 <span>Expense</span>
                             </a>
@@ -285,89 +303,89 @@
                             </tr>
 
                             <tr class="blank_row">
-                                    <td colspan="2"></td>
-    
-                                </tr>
+                                <td colspan="2"></td>
+
+                            </tr>
 
                             <tr class="dateUnderline">
-                                    <td class="day">Today</td>
-                                    <td class="gray text-right">$12345</td>
-    
-                                </tr>
-                                <tr id="two" class="expense">
-                                    <td>Charity</td>
-                                    <td class="money">$2560
-                                        <a href="#">
-                                            <i class="fas fa-angle-right gray"></i></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr id="two" class="expense">
-                                    <td>Education</td>
-                                    <td class="money">$25600
-                                        <a href="#">
-                                            <i class="fas fa-angle-right gray"></i></i>
-                                        </a>
-                                    </td>
-                                </tr>
+                                <td class="day">Today</td>
+                                <td class="gray text-right">$12345</td>
 
-                                <tr class="blank_row">
-                                        <td colspan="2"></td>
-        
-                                    </tr>
+                            </tr>
+                            <tr id="two" class="expense">
+                                <td>Charity</td>
+                                <td class="money">$2560
+                                    <a href="#">
+                                        <i class="fas fa-angle-right gray"></i></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr id="two" class="expense">
+                                <td>Education</td>
+                                <td class="money">$25600
+                                    <a href="#">
+                                        <i class="fas fa-angle-right gray"></i></i>
+                                    </a>
+                                </td>
+                            </tr>
 
-                                <tr class="dateUnderline">
-                                        <td class="day">Today</td>
-                                        <td class="gray text-right">$12345</td>
-        
-                                    </tr>
-                                    <tr id="two" class="expense">
-                                        <td>Charity</td>
-                                        <td class="money">$2560
-                                            <a href="#">
-                                                <i class="fas fa-angle-right gray"></i></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr id="two" class="expense">
-                                        <td>Education</td>
-                                        <td class="money">$25600
-                                            <a href="#">
-                                                <i class="fas fa-angle-right gray"></i></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr class="blank_row">
-                                            <td colspan="2"></td>
-            
-                                        </tr>
-    
-                                    <tr class="dateUnderline">
-                                            <td class="day">Today</td>
-                                            <td class="gray text-right">$12345</td>
-            
-                                        </tr>
-                                        <tr id="two" class="expense">
-                                            <td>Charity</td>
-                                            <td class="money">$2560
-                                                <a href="#">
-                                                    <i class="fas fa-angle-right gray"></i></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr id="two" class="expense">
-                                            <td>Education</td>
-                                            <td class="money">$25600
-                                                <a href="#">
-                                                    <i class="fas fa-angle-right gray"></i></i>
-                                                </a>
-                                            </td>
-                                        </tr>
+                            <tr class="blank_row">
+                                <td colspan="2"></td>
+
+                            </tr>
+
+                            <tr class="dateUnderline">
+                                <td class="day">Today</td>
+                                <td class="gray text-right">$12345</td>
+
+                            </tr>
+                            <tr id="two" class="expense">
+                                <td>Charity</td>
+                                <td class="money">$2560
+                                    <a href="#">
+                                        <i class="fas fa-angle-right gray"></i></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr id="two" class="expense">
+                                <td>Education</td>
+                                <td class="money">$25600
+                                    <a href="#">
+                                        <i class="fas fa-angle-right gray"></i></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr class="blank_row">
+                                <td colspan="2"></td>
+
+                            </tr>
+
+                            <tr class="dateUnderline">
+                                <td class="day">Today</td>
+                                <td class="gray text-right">$12345</td>
+
+                            </tr>
+                            <tr id="two" class="expense">
+                                <td>Charity</td>
+                                <td class="money">$2560
+                                    <a href="#">
+                                        <i class="fas fa-angle-right gray"></i></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr id="two" class="expense">
+                                <td>Education</td>
+                                <td class="money">$25600
+                                    <a href="#">
+                                        <i class="fas fa-angle-right gray"></i></i>
+                                    </a>
+                                </td>
+                            </tr>
 
                         </tbody>
                         <tbody id="bycata">
-                            <tr>
+                            <tr class="expenseCategory">
                                 <td>
                                     <i class='fas fa-tag'></i> Cloths & Fashion
 
@@ -375,7 +393,7 @@
                                 <td class="money">$12345600 </td>
 
                             </tr>
-                            <tr>
+                            <tr class="incomeCategory">
                                 <td>
                                     <i class='fas fa-tag'></i> Food & Drinks
                                 </td>
@@ -413,7 +431,7 @@
                         </div>
                         <div class="form-group row justify-content-md-center">
                             <div class="col-1 pr-0 my-auto text-center">
-                                    <i class="far fa-calendar-alt"></i>
+                                <i class="far fa-calendar-alt"></i>
                             </div>
 
                             <div class="col-8">
@@ -423,7 +441,7 @@
 
                         <div class="form-group row justify-content-md-center">
                             <div class="col-1 pr-0 my-auto text-center">
-                                    <i class="fas fa-list"></i>
+                                <i class="fas fa-list"></i>
                             </div>
                             <div class="col-8">
                                 <select class="form-control" name="" id="">
@@ -475,7 +493,7 @@
                         </div>
                         <div class="form-group row justify-content-md-center">
                             <div class="col-1 pr-0 my-auto text-center">
-                                    <i class="far fa-calendar-alt"></i>
+                                <i class="far fa-calendar-alt"></i>
                             </div>
 
                             <div class="col-8">
@@ -485,7 +503,7 @@
 
                         <div class="form-group row justify-content-md-center">
                             <div class="col-1 pr-0 my-auto text-center">
-                                    <i class="fas fa-list"></i>
+                                <i class="fas fa-list"></i>
                             </div>
                             <div class="col-8">
                                 <select class="form-control" name="" id="">

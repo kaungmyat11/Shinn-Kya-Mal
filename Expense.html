@@ -66,16 +66,35 @@
             var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
             chart.draw(data, options);
         }
+
+        window.addEventListener("load", function () {
+            const preloader = document.querySelector(".preloader");
+            preloader.classList.add("hidden");
+        });
     </script>
 </head>
 
 <body>
+
+    <div class="preloader" id="Loader">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
     <header id="main">
         <nav class="navbar navbar-light bg-primary">
             <a class="navbar-brand" href="#"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
             <ul class="navbar-nav mr-auto my-auto">
                 <li class="nav-item">
-                    Income Dashboard
+                    Expense Dashboard
                 </li>
             </ul>
             <span><a href="Profile.html"><i class="fas fa-user-circle"></i></a></span>
@@ -101,7 +120,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="Expense.html">
                                 <i class="fas fa-minus"></i>
                                 <span>Expense</span>
                             </a>
@@ -285,24 +304,24 @@
                                 </div>
 
                                 <div class="data projects">
-                                        <div class="text">
-                                            <span class="left">Pet</span>
-                                            <span class="right">12000</span>
-                                        </div>
-                                        <div class="line1">
-                                            <div class="fill1 Pet"></div>
-                                        </div>
+                                    <div class="text">
+                                        <span class="left">Pet</span>
+                                        <span class="right">12000</span>
                                     </div>
+                                    <div class="line1">
+                                        <div class="fill1 Pet"></div>
+                                    </div>
+                                </div>
 
-                                    <div class="data projects">
-                                            <div class="text">
-                                                <span class="left">Travel</span>
-                                                <span class="right">12000</span>
-                                            </div>
-                                            <div class="line1">
-                                                <div class="fill1 Travel"></div>
-                                            </div>
-                                        </div>
+                                <div class="data projects">
+                                    <div class="text">
+                                        <span class="left">Travel</span>
+                                        <span class="right">12000</span>
+                                    </div>
+                                    <div class="line1">
+                                        <div class="fill1 Travel"></div>
+                                    </div>
+                                </div>
 
                                 <div class="data projects">
                                     <div class="text">
@@ -424,7 +443,6 @@
                     </button>
                 </div>
                 <div class="modal-body justify-content-md-center">
-                    <!-- <img src="Image/money-bag.png" class="w-50 h-50" alt=""> -->
                     <form action="" class="container-fluid">
                         <div class="form-group row justify-content-md-center">
                             <div class="col-1 pr-0 my-auto text-center">

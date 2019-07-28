@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -27,9 +27,32 @@
 
     <link rel="shortcut icon" type="image/png" href="Image/Piggy.png">
     <title>Details</title>
+
+    <script>
+        window.addEventListener("load", function () {
+            const preloader = document.querySelector(".preloader");
+            preloader.classList.add("hidden");
+        });
+    </script>
+
 </head>
 
 <body>
+
+
+        <div class="preloader" id="Loader">
+                <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+
     <header id="main">
         <nav class="navbar navbar-light bg-primary">
             <a class="navbar-brand" href="#"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
@@ -83,12 +106,13 @@
                     <div class="container-fluid">
                         <div class="row upperDetail">
                             <ul>
-                                <li><i class="fas fa-chevron-left"></i></li>
+                                <li> <a href=""><i class="fas fa-chevron-left"></i></a> </li>
                                 <li>
                                     <h4>Detail</h4>
                                 </li>
                                 <li>
-                                    <button type="button" class="btn btn-outline-*" data-toggle="modal" data-target="#editmodal">
+                                    <button type="button" class="btn btn-outline-*" data-toggle="modal"
+                                        data-target="#editmodal">
                                         Edit
                                     </button>
                                 </li>
@@ -136,140 +160,140 @@
     <!-- Dar ka Income Modal -->
 
     <div class="modal fade" tabindex="-1" id="editmodal" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Add Income</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body justify-content-md-center">
-                        <form action="" class="container-fluid">
-                            <div class="form-group row justify-content-md-center">
-                                <div class="col-1 pr-0 my-auto text-center">
-                                    <i class="fas fa-dollar-sign"></i>
-                                </div>
-    
-                                <div class="col-8">
-                                    <input type="number" class="form-control" placeholder="0.00">
-                                </div>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Income</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body justify-content-md-center">
+                    <form action="" class="container-fluid">
+                        <div class="form-group row justify-content-md-center">
+                            <div class="col-1 pr-0 my-auto text-center">
+                                <i class="fas fa-dollar-sign"></i>
                             </div>
-                            <div class="form-group row justify-content-md-center">
-                                <div class="col-1 pr-0 my-auto text-center">
-                                        <i class="far fa-calendar-alt"></i>
-                                </div>
-    
-                                <div class="col-8">
-                                    <input type="date" class="form-control" placeholder="0.00">
-                                </div>
+
+                            <div class="col-8">
+                                <input type="number" class="form-control" placeholder="0.00">
                             </div>
-    
-                            <div class="form-group row justify-content-md-center">
-                                <div class="col-1 pr-0 my-auto text-center">
-                                        <i class="fas fa-list"></i>
-                                </div>
-                                <div class="col-8">
-                                    <select class="form-control" name="" id="">
-                                        <option>Food</option>
-                                        <option>Bills</option>
-                                        <option>Transportation</option>
-                                        <option>Entertainment</option>
-                                        <option>Insurance</option>
-                                        <option>Clothing</option>
-                                        <option>Tax</option>
-                                        <option>Shopping</option>
-                                        <option>Telephone</option>
-                                        <option>Sports</option>
-                                        <option>Health</option>
-                                        <option>Beauty</option>
-                                        <option>Baby</option>
-                                        <option>Pet</option>
-                                        <option>Travel</option>
-                                        <option>Others</option>
-                                    </select>
-                                </div>
+                        </div>
+                        <div class="form-group row justify-content-md-center">
+                            <div class="col-1 pr-0 my-auto text-center">
+                                <i class="far fa-calendar-alt"></i>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
-                    </div>
+
+                            <div class="col-8">
+                                <input type="date" class="form-control" placeholder="0.00">
+                            </div>
+                        </div>
+
+                        <div class="form-group row justify-content-md-center">
+                            <div class="col-1 pr-0 my-auto text-center">
+                                <i class="fas fa-list"></i>
+                            </div>
+                            <div class="col-8">
+                                <select class="form-control" name="" id="">
+                                    <option>Food</option>
+                                    <option>Bills</option>
+                                    <option>Transportation</option>
+                                    <option>Entertainment</option>
+                                    <option>Insurance</option>
+                                    <option>Clothing</option>
+                                    <option>Tax</option>
+                                    <option>Shopping</option>
+                                    <option>Telephone</option>
+                                    <option>Sports</option>
+                                    <option>Health</option>
+                                    <option>Beauty</option>
+                                    <option>Baby</option>
+                                    <option>Pet</option>
+                                    <option>Travel</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
                 </div>
             </div>
-    
         </div>
 
+    </div>
 
-        <!-- Dar ka Expense Modal -->
 
-        <div class="modal fade" tabindex="-1" id="expensemodal" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Add Income</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body justify-content-md-center">
-                            <!-- <img src="Image/money-bag.png" class="w-50 h-50" alt=""> -->
-                            <form action="" class="container-fluid">
-                                <div class="form-group row justify-content-md-center">
-                                    <div class="col-1 pr-0 my-auto text-center">
-                                        <i class="fas fa-dollar-sign"></i>
-                                    </div>
-        
-                                    <div class="col-8">
-                                        <input type="number" class="form-control" placeholder="0.00">
-                                    </div>
-                                </div>
-                                <div class="form-group row justify-content-md-center">
-                                    <div class="col-1 pr-0 my-auto text-center">
-                                            <i class="far fa-calendar-alt"></i>
-                                    </div>
-        
-                                    <div class="col-8">
-                                        <input type="date" class="form-control" placeholder="0.00">
-                                    </div>
-                                </div>
-        
-                                <div class="form-group row justify-content-md-center">
-                                    <div class="col-1 pr-0 my-auto text-center">
-                                            <i class="fas fa-list"></i>
-                                    </div>
-                                    <div class="col-8">
-                                        <select class="form-control" name="" id="">
-                                            <option>Food</option>
-                                            <option>Bills</option>
-                                            <option>Transportation</option>
-                                            <option>Entertainment</option>
-                                            <option>Insurance</option>
-                                            <option>Clothing</option>
-                                            <option>Tax</option>
-                                            <option>Shopping</option>
-                                            <option>Telephone</option>
-                                            <option>Sports</option>
-                                            <option>Health</option>
-                                            <option>Beauty</option>
-                                            <option>Baby</option>
-                                            <option>Pet</option>
-                                            <option>Travel</option>
-                                            <option>Others</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save</button>
-                        </div>
-                    </div>
+    <!-- Dar ka Expense Modal -->
+
+    <div class="modal fade" tabindex="-1" id="expensemodal" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Income</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-        
+                <div class="modal-body justify-content-md-center">
+                    <!-- <img src="Image/money-bag.png" class="w-50 h-50" alt=""> -->
+                    <form action="" class="container-fluid">
+                        <div class="form-group row justify-content-md-center">
+                            <div class="col-1 pr-0 my-auto text-center">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+
+                            <div class="col-8">
+                                <input type="number" class="form-control" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-md-center">
+                            <div class="col-1 pr-0 my-auto text-center">
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+
+                            <div class="col-8">
+                                <input type="date" class="form-control" placeholder="0.00">
+                            </div>
+                        </div>
+
+                        <div class="form-group row justify-content-md-center">
+                            <div class="col-1 pr-0 my-auto text-center">
+                                <i class="fas fa-list"></i>
+                            </div>
+                            <div class="col-8">
+                                <select class="form-control" name="" id="">
+                                    <option>Food</option>
+                                    <option>Bills</option>
+                                    <option>Transportation</option>
+                                    <option>Entertainment</option>
+                                    <option>Insurance</option>
+                                    <option>Clothing</option>
+                                    <option>Tax</option>
+                                    <option>Shopping</option>
+                                    <option>Telephone</option>
+                                    <option>Sports</option>
+                                    <option>Health</option>
+                                    <option>Beauty</option>
+                                    <option>Baby</option>
+                                    <option>Pet</option>
+                                    <option>Travel</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
             </div>
+        </div>
+
+    </div>
 
 </body>
 
